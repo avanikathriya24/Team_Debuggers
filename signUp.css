@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #111;
+}
+
+.container {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container i {
+    position: absolute;
+    inset: 0;
+    border: 2px solid #fff;
+    transition: 0.5s;
+}
+
+.container:hover i {
+    border: 6px solid var(--clr);
+    filter: drop-shadow(0 0 20px var(--clr))
+}
+
+.container i:nth-child(1) {
+    border-radius: 43% 57% 74% 26%/ 44% 30% 70% 56%;
+    animation: animate 6s linear infinite;
+}
+
+
+.container i:nth-child(2) {
+    border-radius: 62% 38% 42% 58%/ 52% 38% 62% 48%;
+    animation: animate 4s linear infinite;
+}
+
+
+.container i:nth-child(3) {
+    border-radius: 44% 56% 42% 58%/ 37% 65% 35% 63%;
+    animation: animate2 10s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes animate2 {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.container .login {
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container .login h2 {
+    font-size: 2em;
+    color: #fff;
+}
+
+.input {
+    position: relative;
+    font-size: 1.5em;
+    background: linear-gradient(21deg, #ff00ee, #1900ff, #22ff00);
+    padding: 3px;
+    display: inline-block;
+    border-radius: 9999em;
+    width: 100%;
+}
+
+.input>input {
+    background: #111;
+    position: relative;
+    display: inherit;
+    border-radius: inherit;
+    margin: 0;
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    width: 100%;
+    height: 3vw;
+    z-index: 1;
+}
+
+.input>input:focus+span {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.input>span {
+    transform: scale(.993, .94);
+    transition: transform .5s, opacity .25s;
+    opacity: 0;
+    position: absolute;
+    z-index: 0;
+    margin: 4px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    box-shadow: inset 0 0 0 3px #fff, 0 0 0 4px #fff, 3px -3px 30px #ff00ee, -3px 3px 30px #1900ff, -3px 3px 30px #22ff00;
+}
+
+
+input {
+    font-family: inherit;
+    line-height: inherit;
+    color: #fff;
+    min-width: 12em;
+    font-size: large;
+}
+
+::placeholder {
+    color: #cbd0d5;
+}
+
+
+.submit:hover {
+    box-shadow: inset 0 0 0 3px #fff, 0 0 0 4px #fff, 3px -3px 30px #ff00ee, -3px 3px 30px #1900ff, -3px 3px 30px #22ff00;
+}
+
+.submit {
+    transition: all 0.5s ease-in-out;
+}
+
+.submit input {
+    cursor: pointer;
+    font-size: large;
+}
+
+.container .login .link {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.container .login .link a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+
+    .container {
+        position: relative;
+        width: 600px;
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .container .login {
+        position: absolute;
+        width: 300px;
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container .login h2 {
+        font-size: 15vw;
+        color: #fff;
+    }
+
+
+    .input {
+        position: relative;
+        font-size: 1.5em;
+        background: linear-gradient(21deg, #ff00ee, #1900ff, #22ff00);
+        padding: 3px;
+        display: inline-block;
+        border-radius: 9999em;
+        width: 100%;
+        height: 7vh;
+    }
+
+    .input>input {
+        background: #111;
+        position: relative;
+        display: inherit;
+        border-radius: inherit;
+        margin: 0;
+        border: none;
+        outline: none;
+        padding: 12px 20px;
+        width: 100%;
+        height: 14vw;
+        z-index: 1;
+        font-size: 6vw;
+    }
+
+
+    
+.input>span {
+    transform: scale(.993, .94);
+    transition: transform .5s, opacity .25s;
+    opacity: 0;
+    position: absolute;
+    z-index: 0;
+    margin: 4px;
+    border-radius: inherit;
+    pointer-events: none;
+    box-shadow: inset 0 0 0 3px #fff, 0 0 0 4px #fff, 3px -3px 30px #ff00ee, -3px 3px 30px #1900ff, -3px 3px 30px #22ff00;
+}
+
+}

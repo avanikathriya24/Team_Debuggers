@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaalChakra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://www.hanwhaspacehub.com/resources/images/space-hub/earth.webp">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <audio id="audio" autoplay loop>
+        <source src="space.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+
+    <div class="html-container">
+        <div class="html-section">
+            <div class="html-project">
+                <div class="navigation">
+                    <nav>
+                        <ul class="nav-type">
+                            <li><a href="#" target="_blank" class="active">Home</a>
+                            </li>
+                            <li><a href="login.html"
+                                    class="active1">Login</a></li>
+                            <li><a href="#" target="_blank" class="active2">ContactUs</a></li>
+                            <li><a href="#" target="_blank" class="active3">Support</a></li>
+                            <div class="wrapper">
+
+                                <!-- <div class="line"></div> -->
+
+                                <div class="container">
+                                    <input type="text" placeholder="Search...">
+                                    <div class="search"></div>
+                                </div>
+                            </div>
+
+                        </ul>
+                </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+
+    <canvas id="fluid"></canvas>
+
+    <div class="page1">
+        <div class="video-container" style="z-index: 12;">
+            <video src="./Daiict/earth.webm" autoplay loop muted></video>
+        </div>
+        <!-- <div class="video-container">
+            <video src="./Daiict/satellite-earth-sat.webm" autoplay loop muted></video>
+        </div> -->
+
+        <div class="title1">
+            <p class="s1">Debris</p>
+            <p class="s2">In The</p>
+            <p class="s3">Dark</p>
+        </div>
+
+        <div class="title2">
+            <p class="s1">The Silent</p>
+            <p class="s2">Menace Above</p>
+        </div>
+    </div>
+
+
+    <div class="page2">
+        <div id="particles-js"></div>
+
+
+        <div class="title">
+            Tracking the Growing Threat            
+        </div>
+
+        <div class="content">
+            <div class="para1" >
+                <p class="p1">In 1981, an estimated 5,000 objects were in orbit, but new detection systems revealed a growing number. By 2019, this count surged to nearly 20,000 large objects.</p>
+                <p class="p2">By 2002, experts predicted that specific LEO regions (900-1,000 km and 1,500 km altitude) had already surpassed critical density, signaling potential collision cascades.</p>
+                <p class="p2">Hugh Lewis's 2009 prediction highlighted a 50% increase in space debris threat over the next decade, with a fourfold increase expected within 50 years.</p>
+            </div>
+            
+            <div class="para2">
+                <p class="p2">As of 2019, over 128 million pieces of debris smaller than 1 cm, 900,000 pieces between 1-10 cm, and at least 37,000 pieces larger than 10 cm were estimated to be in orbit.</p>
+                <p class="p2">Weekly, more than 13,000 close calls are monitored by global space surveillance networks, underscoring the persistent risk of collision.</p>
+                <p class="p2">By 2020, there were approximately 8,000 metric tons of debris orbiting Earth, with expectations of this figure continuing to rise.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="page3">
+        <div class="video-container">
+            <video src="./Daiict/network.webm" autoplay loop muted></video>
+        </div>
+
+        <div class="title">
+            <p class="p1">Space Hub</p>
+            <p class="p2">Hanwha Space Business Integrated Brand</p>
+
+            <div class="block">
+                <a href=""> Kessler Syndrome<br> Chain reaction of orbital collisions</a>
+            </div>
+            <div class="block">
+                <a href=""> Debris Mitigation<br> Techniques to reduce space debris</a>
+            </div>
+            <div class="block">
+                <a href=""> Space Law<br> International policies on debris management</a>
+            </div>
+            <div class="block">
+                <a href=""> Satellite Collisions<br>Case studies of major space incidentS</a>
+            </div>
+            <div class="block">
+                <a href=""> Debris Detection<br> Advancements in space surveillance technology</a>
+            </div>
+    </div>
+    </div> -->
+
+    <div class="page3">
+        <div class="video-container">
+            <video src="/Daiict/network.webm" autoplay loop muted></video>
+        </div>
+
+        <div class="title">
+            <p class="p1">KaalChakra</p>
+            <p class="p2">Problem no one is talking about</p>
+        </div>
+
+        <div class="block1">
+            <a href=""> Kessler Syndrome<br> Chain reaction of orbital collisions</a>
+        </div>
+        <div class="block2">
+            <a href=""> Debris Mitigation<br> Techniques to reduce space debris</a>
+        </div>
+        <div class="block3">
+            <a href=""> Space Law<br> International policies on debris management</a>
+        </div>
+        <div class="block4">
+            <a href=""> Satellite Collisions<br>Case studies of major space incidentS</a>
+        </div>
+        <div class="block5">
+            <a href=""> Debris Detection<br> Advancements in space surveillance technology</a>
+        </div>
+    </div>
+
+    <div class="spacer">
+
+    </div>
+    <!-- <footer>
+        <div class="blocker">
+
+        </div>
+        <img src="https://assets-global.website-files.com/658a75a8d73e09aac4ef3282/65a4165b3dc6f80f36d6fa81_2-p-2000.jpeg"
+            alt="">            
+
+        <div class="content">
+            <div class="left">
+
+                <img src="" alt="" class="i1">
+                <img src="" alt="" class="i2">
+                <img src="" alt="" class="i3">
+            </div>
+
+            <div class="right">
+                <div class="main">
+                    <ul class="list">
+                        <li><a href="#">KaalChakra</a></li>
+                        <li><a href="#">Projectile</a></li>
+                        <li><a href="#">Satellite</a></li>
+                        <li><a href="#">Exploration</a></li>
+                        <li><a href="#">Media room</a></li>
+                    </ul>
+
+                    <p class="info">
+                        atulrathour888@gmail.com
+                    </p>
+                    <p class="copyright"><font _mstmutation="1" _msttexthash="4622566" _msthash="133">
+                        ⓒ 2023 <em _mstmutation="1">Hanwha Aerospace</em>, <em _mstmutation="1">Hanwha Systems</em>, <em _mstmutation="1">Hanwha Corporation</em> <span _mstmutation="1">All Rights Reserved.</span></font>
+                    </p>
+                </div>
+
+                <div class="youtube">
+                    <a href="https://www.youtube.com/@SpaceHubTV" class="youtube" target="_blank" _msttexthash="97500" _msthash="131">Youtube</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="line"></div>
+        <div class="title">
+            KaalChakra
+        </div>
+            
+            
+     </footer> -->
+
+
+     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.2.0/tsparticles.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- React and ReactDOM -->
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="cursor.js"></script>
+    <script src="script.js"></script>
+     <script src="test.js"></script>
+
+</body>
+
+</html>
